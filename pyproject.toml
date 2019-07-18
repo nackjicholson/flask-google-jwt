@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "flask-google-jwt"
+version = "0.1.0"
+description = "Flask plugin providing route decorators and utilities for verifying Google issued JWT tokens."
+authors = ["William Vaughn <vaughnwilld@gmail.com>"]
+repository = "https://github.com/nackjicholson/flask-google-jwt"
+readme = "README.md"
+keywords = ["flask", "google", "JWT", "opendid", "auth", "jose", "JWK"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+google-jwt = "^0.1.0"
+flask = "^1.1"
+
+[tool.poetry.dev-dependencies]
+black = "=19.3b0"
+flake8 = "^3.7"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py37']
